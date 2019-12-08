@@ -1,6 +1,7 @@
 package com.yhkim.kt_20191208_me_listviewpractice.adapters
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,8 @@ class StudentAdapter(context: Context, resource: Int, list: ArrayList<User>) :
     val inf = LayoutInflater.from(mContext)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+
+        Log.d("getView 실행", "${position} 번 줄 그리기")
 
         var tempRow = convertView
 
