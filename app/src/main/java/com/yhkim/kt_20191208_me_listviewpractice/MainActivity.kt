@@ -86,6 +86,11 @@ class MainActivity : AppCompatActivity() {
         secondStudentList.add(User("양성심","서울시 관악구", true))
         secondStudentList.add(User("이규현","서울시 도봉구", false))
         secondStudentList.add(User("이수정","서울시 고양구", true))
+        secondStudentList.add(User("아이유","서울시 강동구", true))
+        secondStudentList.add(User("아이린","서울시 어딘가", false))
+        secondStudentList.add(User("박보검","서울시 관악구", true))
+        secondStudentList.add(User("윤석열","서울시 도봉구", false))
+        secondStudentList.add(User("문재인","서울시 고양구", true))
     }
 
 }
