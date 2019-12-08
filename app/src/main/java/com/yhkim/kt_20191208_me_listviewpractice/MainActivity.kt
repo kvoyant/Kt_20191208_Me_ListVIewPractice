@@ -3,13 +3,15 @@ package com.yhkim.kt_20191208_me_listviewpractice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.yhkim.kt_20191208_me_listviewpractice.adapters.UserAdapter
 import com.yhkim.kt_20191208_me_listviewpractice.datas.User
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     val studentList = ArrayList<User>()
-
+    var userAdapter:UserAdapter? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +41,9 @@ class MainActivity : AppCompatActivity() {
 
 //        학생목록 추가
         addStudents()
+
+        userAdapter = UserAdapter(this, R.layout.user_list_item, studentList)
+        userListView.adapter = userAdapter
 
     }
 
