@@ -25,6 +25,12 @@ class StudentAdapter(context: Context, resource: Int, list: ArrayList<User>) :
         var tempRow = convertView
 
         if(tempRow == null) {
+
+            Log.d("새로 뷰 그리기", "inflate 실행됨")
+            //일단 보이는 화면에서만 로그찍힘, 드래그해서 추가로 데이터 볼경우 로그 안찍힘
+            //ListView 이론 - 재사용성 : 한화면에 너무 많은 수의 View들을 생성하면 핸드폰 메모리 용량 초과(trello 확인)
+            //저글링 방식으로 생각하면 됨
+
             tempRow = inf.inflate(R.layout.student_list_item, null)
         }
         val row = tempRow!!//절대 null 이 아님
