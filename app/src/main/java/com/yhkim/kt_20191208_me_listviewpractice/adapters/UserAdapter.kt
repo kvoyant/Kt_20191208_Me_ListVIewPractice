@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.yhkim.kt_20191208_me_listviewpractice.R
 import com.yhkim.kt_20191208_me_listviewpractice.datas.User
-import org.w3c.dom.Text
 
 class UserAdapter(context:Context, resId:Int, list: ArrayList<User>) : ArrayAdapter<User>(context, resId, list) {
 
@@ -16,24 +15,13 @@ class UserAdapter(context:Context, resId:Int, list: ArrayList<User>) : ArrayAdap
     val mList = list
     val inf = LayoutInflater.from(mContext)
 
-    /*
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var tempRow = convertView
 
-        if(tempRow == null) {
-            tempRow = inf.inflate(R.layout.user_list_item, null)
-        }
-        val row = tempRow!!
-
-//        상황에 맞는 데이터를 user_list_item에 뿌려주기
-    }
-    */
-
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        var tempRow = convertView
         if (tempRow == null) {
             tempRow = inf.inflate(R.layout.user_list_item, null)
         }
+
         val row = tempRow!!
 
 //        상황에 맞는 데이터를 user_list_item에 뿌려주기

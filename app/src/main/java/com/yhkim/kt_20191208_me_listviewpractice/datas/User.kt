@@ -1,7 +1,6 @@
 package com.yhkim.kt_20191208_me_listviewpractice.datas
 
 import android.util.Log
-import java.util.*
 
 class User( inputName:String, inputAddress:String, isWomenOk:Boolean ) {
 
