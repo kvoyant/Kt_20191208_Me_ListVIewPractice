@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     //테스트용 주석
 
+    //공부용 주석
+
     val studentList = ArrayList<User>()
     var userAdapter:UserAdapter? = null
 
